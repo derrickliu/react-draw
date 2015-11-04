@@ -1,0 +1,84 @@
+html,body,div,p,a,span,img,h2,p,ul,li,input,strong,small,del,select{margin: 0;padding: 0;}
+body{
+	-webkit-user-select:none;
+	line-height: 1;
+	-webkit-touch-callout: none;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	font-size: 0.16rem;
+	background: url(images/bg.jpg) no-repeat;
+	background-size: 100%;
+}
+@count: 225rem;
+body,input,button,select{font-family: "microsoft yahei";}
+ul,li{list-style:none;}
+html,body,.box,#container{ height: 100%; }
+
+@bottom: 170 / @count;
+.wrapper{ min-height: 100%; margin-bottom: -@bottom;}
+
+.wrapper-inner{ 
+	padding-bottom: @bottom; 
+	padding: 1px;
+}
+
+footer{ height: @bottom; overflow: hidden;}
+.draw-btn{
+	background: #f6e638;
+	color: #be742c;
+	font-size: 36 / @count;
+	width: 306 / @count;
+	height: 80 / @count;
+	display: block;
+	margin: 0 auto;
+	border: none;
+	border-bottom: 5 / @count solid #eebb31;
+}
+
+.prize-list{
+	overflow: hidden;
+	background: rgba(77,215,249,.5);
+	width: 340 / @count;
+	height: 340 / @count;
+	padding: 10 / @count;
+	margin: 420 / @count auto 0;
+}
+
+.prize-list li{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.prize-list img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.prize-list p{
+	position: absolute;
+	width: 100%;
+	height: 80 / @count;
+	line-height: 80 / @count;
+	background: #48caea;
+	border-bottom: 5 / @count solid #218499;
+	font-size: 36 / @count;
+	text-align: center;
+	color: #317e91;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.hot{
+	font-weight: bold;
+	color: #f6793e;
+}
+
+.prize-info{
+	text-align: center;
+	font-size: 32 / @count;
+	line-height: 44 / @count;
+	color: #1f8596;
+	padding-top: 10 / @count;
+}
